@@ -17,6 +17,7 @@ interface Archivo {
   styleUrls: ['./app.css']
 })
 export class AppComponent {
+  //Tercer commit
   title = signal('mimodal');
   isPaperclipModalOpen = signal(false);
   archivosPorEliminar = signal([
