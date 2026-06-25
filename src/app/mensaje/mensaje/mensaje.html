@@ -1,0 +1,17 @@
+<div class="mensaje-container">
+    <div class="info-card">
+        <h2>Estado del Sistema</h2>
+        <p>Revisa las últimas notificaciones de sincronización con el servidor.</p>
+        <button class="btn-info" (click)="mostrarMensaje()">
+            Ver Última Notificación
+        </button>
+    </div>
+    <app-modal [isOpen]="isInfoModalOpen()" title="Sincronización Exitosa" textConfirm="Entendido" textCancel="Cerrar"
+        (onConfirm)="alAceptarMensaje()" (onCancel)="alCerrarMensaje()">
+        <div class="success-content">
+            <div class="success-icon"> </div>
+            <h3>¡Todo listo!</h3>
+            <p>Todos tus cambios locales se han guardado de forma segura en la nube.</p>
+        </div>
+    </app-modal>
+</div>
